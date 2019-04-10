@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue</title>
+</head>
+<body>
+
+	<div id="app">
+		<h1>Helo Word !</h1>
+		<h1>{{judul}}</h1>
+		<p>{{isi}}</p>
+		<input type="" name="" v-bind:placeholder="judul">
+		<br>Atau<br>
+		<input type="" name="" :placeholder="judul"><br><br>
+		<p v-if="true">ini untuk v-if</p>
+		<p v-if="false">ini untuk v-if</p>
+		<p v-if="kondisi">Benar</p>
+		<ul>
+			<li v-for="title in titles">{{title}}</li>
+		</ul>
+
+		<button v-on:click="gantiJudul()">Ganti Judul</button>
+		<button v-on:click="gantiJudul1('Memanah')">Ganti Judul Value</button>
+		<button v-on:click="gantiIsi()">Ganti Isi</button>
+		<button v-on:dblclick="gantiIsi()">Ganti Isi double click</button>
+		<button @dblclick="gantiIsi()">Ganti Isi double click @</button>
+	</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+<script src="vuescript.js"></script>
+</body>
+</html>

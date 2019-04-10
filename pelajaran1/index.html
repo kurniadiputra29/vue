@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Vue</title>
+	<style type="text/css">
+		.body{
+			margin: auto;
+			background: aqua;
+			width: 20%;
+			border-radius: 10px;
+		}
+		.gambar{
+			justify-content: center;
+			text-align: center;
+		}
+		.HA{
+			text-align: center;
+		}
+		.HSD{
+			text-align: center;
+		}
+		.stock{
+			text-align: center;
+		}
+		.judul{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div id="app">
+	<my-input judul="Nama"></my-input>
+	<my-input judul="Alamat"></my-input>
+	<my-input judul="Hp"></my-input>
+	<my-input judul="Makanan"></my-input>
+</div>
+
+<div id="tugas" class="body">
+	<div class="gambar">
+		<my-tugas gambar="https://shop.indomarkt.com/532-large_default/garudakacangatomgarlic200gr.jpg"></my-tugas>
+	</div>
+	<div class="judul"><my-tugas judul="Kacang Atom"></my-tugas></div>
+	<div class="HA"><my-tugas HA="Rp 10.000,00"></my-tugas></div>
+	<div class="HSD"><my-tugas HSD="Rp 8.000,00"></my-tugas></div>
+	<div class="stock"><my-tugas stock="50"></my-tugas></div>
+
+	<div class="gambar">
+		<my-tugas gambar="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6vqkvfYCbqDv2rhfnUHaFoKYhNHXeu9Zv_bVu1Pt2x-cVc7i"></my-tugas>
+	</div>
+	<div class="judul"><my-tugas judul="Kacang Garuda"></my-tugas></div>
+	<div class="HA"><my-tugas HA="Rp 15.000,00"></my-tugas></div>
+	<div class="HSD"><my-tugas HSD="Rp 13.000,00"></my-tugas></div>
+	<div class="stock"><my-tugas stock="40"></my-tugas></div>
+</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+	<script src="vuescript.js"></script>
+</body>
+</html>
